@@ -17,8 +17,6 @@ public class Exercise09 {
     @Given("user launch the browser")
     public void user_launch_the_browser() {
 
-        WebDriver driver = new FirefoxDriver();
-        driver.quit();
 
     }
 
@@ -78,5 +76,6 @@ public class Exercise09 {
         Assert.assertTrue(exercise.menTshirt.isDisplayed());
 
     }
+
 }
 

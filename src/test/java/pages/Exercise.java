@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import static org.bouncycastle.asn1.cmc.CMCStatus.success;
+
 public class Exercise {
 
     public Exercise() {
@@ -30,9 +32,16 @@ public class Exercise {
     public WebElement menTshirt;
 
 
+    @FindBy(xpath ="//input[@id='susbscribe_email']")
+    public WebElement susbscribemailbutton;
 
+    @FindBy(xpath ="//i[@class='fa fa-arrow-circle-o-right']")
+    public WebElement subscribeClick;
 
+    @FindBy(xpath ="//div[@class='alert-success alert']")
+    public WebElement alert;
 
-
+    @FindBy(xpath ="//*[text()='Subscription']")
+    public WebElement SubscriptionText;
 
 }
